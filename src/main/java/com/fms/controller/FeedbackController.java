@@ -33,7 +33,7 @@ public class FeedbackController {
 		return new ResponseEntity<List<FeedbackQuestion>>(feedbackList, HttpStatus.OK);
 	}
 
-	@DeleteMapping("/feedback/")
+	@DeleteMapping("/feedback")
 	public ResponseEntity<String> removeFeedback(@RequestBody FeedbackQuestion feedback) throws Exception {
 		String res = service.removeFeedback(feedback.getFbQuestion());
 		return new ResponseEntity<String>(res, HttpStatus.OK);
