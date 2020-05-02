@@ -76,7 +76,7 @@ public class EmailService {
 			File fileLoc = new File(fileName);
 			if (fileLoc.exists()) {
 				FileSystemResource file = new FileSystemResource(new File(fileName));
-				helper.addAttachment("EventExcel.xlxs", file);
+				helper.addAttachment("EventExcel.xlsx", file);
 			} else {
 				log.error("File Doesnt exists at {}", fileName);
 			}
